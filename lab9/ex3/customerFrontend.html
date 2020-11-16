@@ -1,0 +1,56 @@
+<html>
+<head>
+    <title>Exercise 3</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<h2>Exercise 3: Web</h2>
+<body>
+    <form id="myform" action="customerBackend.php" method="POST">
+        <h3 style="color:seagreen">WATERMELON SHOP</h3>
+        <h4>Items:</h4>
+        <div>
+            <img src="https://th.bing.com/th/id/OIP.hnQMLcpByD_sW7p9uJaf0gHaHA?w=162&h=180&c=7&o=5&pid=1.7" width="180" height="180" >
+            <li>Heart-shaped watermelon($15)</li>
+            <label>Input the number :</label>
+            <input type="text" name="heart" onkeypress="return onlyNumber(event)" required />
+        </div>
+        <br />
+        <div>
+            <img src="http://4.bp.blogspot.com/-OKYk4VP8_9E/Tl4s6yNgQqI/AAAAAAAAAC8/jexPDBJKPLY/s1600/square-watermelon.jpg" width="180" height="150">
+            <li>Square watermelon($10)</li>
+            <label>Input the number :</label>
+            <input type="text" name="squre" onkeypress="return onlyNumber(event)" required />
+        </div>
+        <br />
+        <div>
+            <img src="https://th.bing.com/th/id/OIP.JvrVUMqzWaLCJcC9Bj6xKwHaHa?pid=Api&rs=1" width="180" height="150">
+            <li>Yellow flesh watermelon($8)</li>
+            <label>Input the number :</label>
+            <input type="text" name="yellow" onkeypress="return onlyNumber(event)" required />
+        </div>
+        <br />
+        <div>
+            <h4>Customer information</h4>
+            <label>uername</label>
+            <input type="email" name=" email" required />
+            <label>password</label>
+            <input type="password" name="password" required />
+        </div>
+        <div>
+            <h4>Shipping</h4>
+            <input type='radio' name='shipping' value="0" required>
+            <label>Free 7 dayon</label>
+            <input type='radio' name='shipping' value="50" required>
+            <label>$50.00 over night</label>
+            <input type='radio' name='shipping' value="5" required>
+            <label>$5.00 three day</label>
+        </div>
+        <br />
+        <input type='reset' value="Reset" style='width: 60px; height: 30px; border-radius: 3px; background-color: lightseagreen;' ></input>
+        <input type='submit' value="Submit" style='width: 60px; height: 30px; border-radius: 3px; background-color: lightseagreen;'></input>
+
+    </form>
+    
+    <script src="formChecker.js"></script>
+</body>
+</html>
